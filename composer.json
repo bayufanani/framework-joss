@@ -1,0 +1,14 @@
+{
+    "name": "bayufanani/framework-joss",
+    "description": "proposal framework untuk perusahaan saya",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bayu Fanani",
+            "email": "fanani707@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
