@@ -33,7 +33,6 @@ class EnvCustom
             if (strpos($line, '#') === 0) continue;
 
             $baris = explode('=', $line);
-            $baris[1] = trim($baris[1]);
             putenv("{$baris[0]}={$baris[1]}");
             $_ENV[$baris[0]] = $baris[1];
         }
