@@ -2,6 +2,8 @@
 
 namespace Bootstrap;
 
+use App\Exception\EnvFileNotFound;
+
 class EnvCustom
 {
     /**
@@ -14,7 +16,7 @@ class EnvCustom
     public function __construct($file)
     {
         if (!file_exists($file)) {
-            throw new \Exception("File {$file} tidak ditemukan");
+            throw new EnvFileNotFound($file);
         }
 
         $this->file = $file;
